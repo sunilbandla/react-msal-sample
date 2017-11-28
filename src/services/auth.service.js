@@ -8,7 +8,7 @@ export default class AuthService {
       redirectUri = PROD_REDIRECT_URI;
     }
     this.applicationConfig = {
-      clientID: '60e769a3-2b51-4adf-a7e9-b3377270e648',
+      clientID: '9d86c8dc-bf7d-4573-bc3c-4df2f2c32b93',
       graphScopes: ['user.read']
     };
     this.app = new Msal.UserAgentApplication(
