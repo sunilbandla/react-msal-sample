@@ -2,6 +2,11 @@ import * as Msal from 'msal';
 
 export default class AuthService {
   constructor() {
+    let PROD_REDIRECT_URI = 'https://sunilbandla.github.io/react-msal-sample/';
+    let redirectUri = window.location.origin;
+    if (window.location.hostname !== '127.0.0.1') {
+      redirectUri = PROD_REDIRECT_URI;
+    }
     this.applicationConfig = {
       clientID: '60e769a3-2b51-4adf-a7e9-b3377270e648',
       graphScopes: ['user.read']
@@ -11,6 +16,9 @@ export default class AuthService {
       '',
       () => {
         // callback for login redirect
+      },
+      {
+        redirectUri
       }
     );
   }
