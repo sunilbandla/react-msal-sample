@@ -4,7 +4,7 @@
 - Calls Microsoft Graph API by passing a token obtained via MSAL
 
 ## How to add MSAL.js to a simple React app
-- See this [commit](https://github.com/sunilbandla/cra-msal-sample/commit/c4a7e5dea32755ed185b430331d32bf759a62dc0)
+- See this [commit](https://github.com/sunilbandla/react-msal-sample/commit/c4a7e5dea32755ed185b430331d32bf759a62dc0)
 
 ## Setup
 
